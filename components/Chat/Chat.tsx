@@ -224,7 +224,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
           };
           homeDispatch({
             field: 'selectedConversation',
-            value: updatedConversation,
+            value: updateConversation,
           });
           saveConversation(updatedConversation);
           const updatedConversations: Conversation[] = conversations.map(
